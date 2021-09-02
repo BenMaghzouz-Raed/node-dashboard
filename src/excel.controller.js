@@ -15,7 +15,7 @@ const upload = async (req, res) => {
     }
 
     let name = req.file.filename;
-    let path = __basedir + "public/uploads/" + name;
+    let path = __basedir + "/public/uploads/" + name;
 
     File.bulkCreate([
     { title: name,
