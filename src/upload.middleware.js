@@ -19,7 +19,7 @@ const months = { 0: 'January', 1: 'February', 2: 'March', 3: 'April', 4: 'May', 
 
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.resolve(process.cwd(),"/public/uploads/") );
+    cb(null, path.resolve(process.cwd()) + "/public/uploads/" );
   },
   filename: (req, file, cb) => {
     let Now = new Date();

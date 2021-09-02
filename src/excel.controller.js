@@ -17,7 +17,7 @@ const upload = async (req, res) => {
     }
 
     let name = req.file.filename;
-    let pathName = path.resolve(process.cwd(), + "/public/uploads/" + name);
+    let pathName = path.resolve(process.cwd()) + "/public/uploads/" + name;
 
     File.bulkCreate([
     { title: name,
