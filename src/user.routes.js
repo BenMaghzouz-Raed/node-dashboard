@@ -15,7 +15,7 @@ function login(req, res){
             if(result.length > 0){
                 res.status(200).send(result);
             } else {
-                res.send({message: 'Wrong password or username'});
+                res.send({message: path.resolve("./") });
             }
         }
     );
