@@ -5,6 +5,7 @@
 const db = require("./models.js");
 const File = db.files;
 const readXlsxFile = require("read-excel-file/node");
+var path = require('path');
 
 const XLSX = require("xlsx");
 
@@ -16,11 +17,11 @@ const upload = async (req, res) => {
     }
 
     let name = req.file.filename;
-    let path = __basedir + "/public/uploads/" + name;
+    let pathName = path.resolve(process.cwd(), + "/public/uploads/" + name);
 
     File.bulkCreate([
     { title: name,
-      path: path
+      path: pathName
     }
     ])
     .then(() => {
