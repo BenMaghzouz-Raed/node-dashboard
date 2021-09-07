@@ -11,10 +11,10 @@ const db = mysql.createConnection({
   database: process.env.DATABASE,
 });
 
-const sequelize = new Sequelize("3934762_dashboard", "3934762_dashboard", "bm55027363@7", {
-  host: "fdb32.awardspace.net",
+const sequelize = new Sequelize("sql11435280", "sql11435280", "kNRt159Spv", {
+  host: "sql11.freemysqlhosting.net",
   dialect: 'mysql',
-  operatorsAliases: false,
+  port: 3306,
 });
 
 db.Sequelize = Sequelize;

@@ -20,7 +20,7 @@ app.use(session({
   cookie: { maxAge: 60000 }
 }))
 
-global.__basedir = __dirname + "/..";
+global.__basedir = __dirname + "/";
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
