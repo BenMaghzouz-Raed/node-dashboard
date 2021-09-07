@@ -5,9 +5,7 @@ const session = require('express-session');
 const app = express();
 
 const cors = require('cors')
-app.use(cors({
-  origin: 'https://dashboard-charts.netlify.app', 
-}));
+app.use(cors());
 
 require('dotenv').config();
 const db = require("./src/models.js");
