@@ -11,8 +11,8 @@ const db = mysql.createConnection({
   database: process.env.DATABASE,
 });
 
-const sequelize = new Sequelize("HAnykTKdP9", "HAnykTKdP9", "Nf5EeX5KFk", {
-  host: "remotemysql.com",
+const sequelize = new Sequelize("3934762_dashboard", "3934762_dashboard", "bm55027363@7", {
+  host: "fdb32.awardspace.net",
   dialect: 'mysql',
   operatorsAliases: false,
 });
